@@ -1,17 +1,17 @@
-# NickelEquip — Heavy Machinery Mining Company Profile
+# NickelEquip - Heavy Machinery Mining Company Profile
 
 A modern, high-performance corporate website and product catalog for a heavy machinery mining company (nickel extraction & EV supply chain), built with React 19, Vite, TypeScript, and Tailwind CSS 4.
 
-## ✨ Features
+## Features
 
-- **Full corporate pages** — Home, About, Catalog, Services, Gallery, and Contact, organized as a clean multi-page SPA with no page-reload navigation (React Router DOM 7).
-- **Product catalog** — dedicated catalog page showcasing heavy machinery and equipment for nickel mining operations.
-- **Industrial design system** — dark industrial palette with orange accents, gradient overlays, and backdrop filters for premium readability.
-- **Shared layout** — consistent header and footer across pages via a single `Layout` component.
-- **Fully responsive** — layouts adapt smoothly across mobile, tablet, and wide desktop screens.
-- **AI-ready** — Gemini API dependency (`@google/genai`) and `GEMINI_API_KEY` environment template included for future AI-powered features.
+- **Full corporate pages** - Home, About, Catalog, Services, Gallery, and Contact, organized as a clean multi-page SPA with no page-reload navigation (React Router DOM 7).
+- **Product catalog** - dedicated catalog page showcasing heavy machinery and equipment for nickel mining operations.
+- **Industrial design system** - dark industrial palette with orange accents, gradient overlays, and backdrop filters for premium readability.
+- **Shared layout** - consistent header and footer across pages via a single `Layout` component.
+- **Fully responsive** - layouts adapt smoothly across mobile, tablet, and wide desktop screens.
+- **AI-ready** - Gemini API dependency (`@google/genai`) and `GEMINI_API_KEY` environment template included for future AI-powered features.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 | --- | --- |
@@ -23,7 +23,7 @@ A modern, high-performance corporate website and product catalog for a heavy mac
 | Icons | Material Symbols & lucide-react |
 | AI (prepared) | Gemini API (`@google/genai`) |
 
-## 🚀 Getting Started
+## Getting Started
 
 **Prerequisite:** Node.js
 
@@ -44,32 +44,32 @@ Open `http://localhost:3000` in your browser.
 Other commands:
 
 ```bash
-npm run build    # production build to dist/
-npm run preview  # preview the production build
-npm run lint     # type-check (tsc --noEmit)
-npm run clean    # remove dist/
+npm run build # production build to dist/
+npm run preview # preview the production build
+npm run lint # type-check (tsc --noEmit)
+npm run clean # remove dist/
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
 ├── components/
-│   ├── Layout.tsx        # Shared shell: Header + Footer + Outlet
-│   ├── Header.tsx        # Top navigation
-│   └── Footer.tsx
+│ ├── Layout.tsx # Shared shell: Header + Footer + Outlet
+│ ├── Header.tsx # Top navigation
+│ └── Footer.tsx
 ├── pages/
-│   ├── Home.tsx          # Hero & highlights
-│   ├── About.tsx         # Company profile
-│   ├── Catalog.tsx       # Machinery & equipment catalog
-│   ├── Services.tsx      # Specialist services
-│   ├── Gallery.tsx
-│   └── Contact.tsx       # Global offices & inquiry
-├── App.tsx               # Router setup
-└── main.tsx              # Entry point
-.env.example              # Environment variable template (GEMINI_API_KEY, APP_URL)
+│ ├── Home.tsx # Hero & highlights
+│ ├── About.tsx # Company profile
+│ ├── Catalog.tsx # Machinery & equipment catalog
+│ ├── Services.tsx # Specialist services
+│ ├── Gallery.tsx
+│ └── Contact.tsx # Global offices & inquiry
+├── App.tsx # Router setup
+└── main.tsx # Entry point
+.env.example # Environment variable template (GEMINI_API_KEY, APP_URL)
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
