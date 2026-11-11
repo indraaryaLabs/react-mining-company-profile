@@ -1,42 +1,75 @@
-# NickelEquip - Corporate Web Portal 🚜⚡
+# NickelEquip — Heavy Machinery Mining Company Profile
 
-## 📌 Deskripsi Proyek
-Proyek ini adalah implementasi *Front-End* untuk portal web korporat B2B (Business-to-Business) yang bergerak di bidang penyediaan alat berat dan solusi ekstraksi pertambangan nikel. 
+A modern, high-performance corporate website and product catalog for a heavy machinery mining company (nickel extraction & EV supply chain), built with React 19, Vite, TypeScript, and Tailwind CSS 4.
 
-Website ini dirancang untuk memproyeksikan citra perusahaan yang tangguh, inovatif, dan berkelas dunia, sekaligus menyajikan informasi katalog mesin, layanan spesialis, dan kontak perusahaan dengan navigasi yang sangat mulus tanpa *page reload*.
+## ✨ Features
 
-## 🌟 Sorotan Fitur (Features)
-- **Modern Corporate UI/UX:** Desain antarmuka premium dengan kombinasi warna industri (gelap dan aksen oranye), memanfaatkan utilitas Tailwind CSS terkini.
-- **Single Page Application (SPA):** Navigasi instan antar halaman (About, Catalog, Services, Gallery) menggunakan React Router DOM.
-- **Responsive Layout:** Tata letak yang beradaptasi sempurna pada perangkat seluler, tablet, maupun layar desktop lebar.
-- **Optimized Assets:** Penggunaan teknik *gradient overlay*, *backdrop filters*, dan pengaturan gambar yang optimal untuk memastikan visual tetap memukau tanpa mengorbankan keterbacaan teks.
+- **Full corporate pages** — Home, About, Catalog, Services, Gallery, and Contact, organized as a clean multi-page SPA with no page-reload navigation (React Router DOM 7).
+- **Product catalog** — dedicated catalog page showcasing heavy machinery and equipment for nickel mining operations.
+- **Industrial design system** — dark industrial palette with orange accents, gradient overlays, and backdrop filters for premium readability.
+- **Shared layout** — consistent header and footer across pages via a single `Layout` component.
+- **Fully responsive** — layouts adapt smoothly across mobile, tablet, and wide desktop screens.
+- **AI-ready** — Gemini API dependency (`@google/genai`) and `GEMINI_API_KEY` environment template included for future AI-powered features.
 
-## 🛠️ Teknologi yang Digunakan
-- **Core:** React.js (v19)
-- **Build System:** Vite
-- **Styling:** Tailwind CSS (v4)
-- **Routing:** React Router DOM (v7)
-- **Icons:** Material Symbols & Lucide React
+## 🛠️ Tech Stack
 
-## 🚀 Cara Menjalankan Secara Lokal (Local Setup)
+| Layer | Technology |
+| --- | --- |
+| UI Library | React 19 |
+| Language | TypeScript |
+| Build Tool | Vite 6 |
+| Styling | Tailwind CSS 4 (`@tailwindcss/vite`) |
+| Routing | React Router DOM 7 |
+| Icons | Material Symbols & lucide-react |
+| AI (prepared) | Gemini API (`@google/genai`) |
 
-**Prasyarat:**
-- Node.js versi terbaru terinstal di sistem Anda.
+## 🚀 Getting Started
 
-**Langkah-langkah Instalasi:**
-1. Clone repository ini:
-   \`\`\`bash
-   git clone https://github.com/indraarya77/react-mining-company-profile.git
-   cd react-mining-company-profile
-   \`\`\`
+**Prerequisite:** Node.js
 
-2. Instal dependencies:
-   \`\`\`bash
-   npm install
-   \`\`\`
+```bash
+git clone https://github.com/indraaryaLabs/react-mining-company-profile.git
+cd react-mining-company-profile
+npm install
+```
 
-3. Jalankan server pengembangan lokal:
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-   Aplikasi dapat diakses melalui browser pada `http://localhost:3000`.
+Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY` if you plan to use Gemini-powered features, then run:
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000` in your browser.
+
+Other commands:
+
+```bash
+npm run build    # production build to dist/
+npm run preview  # preview the production build
+npm run lint     # type-check (tsc --noEmit)
+npm run clean    # remove dist/
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Layout.tsx        # Shared shell: Header + Footer + Outlet
+│   ├── Header.tsx        # Top navigation
+│   └── Footer.tsx
+├── pages/
+│   ├── Home.tsx          # Hero & highlights
+│   ├── About.tsx         # Company profile
+│   ├── Catalog.tsx       # Machinery & equipment catalog
+│   ├── Services.tsx      # Specialist services
+│   ├── Gallery.tsx
+│   └── Contact.tsx       # Global offices & inquiry
+├── App.tsx               # Router setup
+└── main.tsx              # Entry point
+.env.example              # Environment variable template (GEMINI_API_KEY, APP_URL)
+```
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
